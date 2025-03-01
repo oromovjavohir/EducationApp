@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingVertical="12dp"
+    android:background="@drawable/bg_1"
+    android:layout_margin="6dp"
+    >
+
+   <com.google.android.material.card.MaterialCardView
+       android:id="@+id/card"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintLeft_toLeftOf="parent"
+       android:layout_marginStart="10dp"
+       android:layout_width="80dp"
+       android:layout_height="80dp"
+
+       >
+      <androidx.appcompat.widget.AppCompatImageView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:src="@drawable/img_course"
+          />
+   </com.google.android.material.card.MaterialCardView>
+
+   <TextView
+       android:id="@+id/CourseName"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Android"
+       android:fontFamily="@font/font1"
+       app:layout_constraintLeft_toRightOf="@id/card"
+       app:layout_constraintRight_toRightOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       android:layout_marginTop="12dp"
+       android:textSize="18sp"
+       app:layout_constraintHorizontal_bias="0.4"
+       android:textColor="@color/white"
+       />
+
+   <ImageView
+       android:id="@+id/moreCourse"
+       android:layout_width="36dp"
+       android:layout_height="36dp"
+       android:src="@drawable/more"
+       app:layout_constraintRight_toRightOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       android:layout_margin="12dp"
+       android:background="@drawable/custom_rippe"
+       app:tint="@color/white" />
+
+   <TextView
+       android:id="@+id/text"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="O'quvchilar soni:"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintLeft_toLeftOf="parent"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintRight_toRightOf="parent"
+       app:layout_constraintVertical_bias="0.7"
+       app:layout_constraintHorizontal_bias="0.5"
+       android:textStyle="italic|bold"
+       android:textColor="@color/white"
+       />
+
+   <TextView
+       android:id="@+id/StCount"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       app:layout_constraintTop_toTopOf="@id/text"
+       app:layout_constraintBottom_toBottomOf="@id/text"
+       app:layout_constraintLeft_toRightOf="@id/text"
+       android:text="80"
+       android:textStyle="italic|bold"
+       android:textColor="@color/white"
+       />
+
+
+   <TextView
+       android:id="@+id/text2"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Guruhlar soni:"
+       app:layout_constraintTop_toBottomOf="@id/text"
+       app:layout_constraintLeft_toLeftOf="@id/text"
+
+       android:textStyle="italic|bold"
+       android:textColor="@color/white"
+       />
+
+   <TextView
+       android:id="@+id/GpCount"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       app:layout_constraintTop_toTopOf="@id/text2"
+       app:layout_constraintBottom_toBottomOf="@id/text2"
+       app:layout_constraintLeft_toRightOf="@id/text2"
+       android:text="10"
+       android:textStyle="italic|bold"
+       android:textColor="@color/white"
+       />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
