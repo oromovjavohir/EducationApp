@@ -1,6 +1,7 @@
 package com.example.education.app
 
 import android.app.Application
+import android.content.res.Resources
 import com.example.education.repostitory.DataBaseImpl
 
 /**
@@ -9,9 +10,14 @@ import com.example.education.repostitory.DataBaseImpl
  * Project: Education
  * Javohir's MacBook Air
  */
-class App: Application() {
+class App : Application() {
     override fun onCreate() {
         super.onCreate()
         DataBaseImpl.init(this)
+    }
+
+    override fun getResources(): Resources {
+        val a = 0
+        return super.getResources()
     }
 }
