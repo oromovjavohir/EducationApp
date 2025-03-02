@@ -1,4 +1,4 @@
-# EducationApp
+# Education
 
 My education app
 
