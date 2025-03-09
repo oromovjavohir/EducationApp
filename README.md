@@ -29,4 +29,4 @@ My education app
 1. Клонируйте репозиторий:
 
 ```bash
-git clone https://github.com/oromovjavohir/EducationApp.git
+https://github.com/JavohirOromov/EducationApp.git
